@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>DojoCon Japan 2019 | AR Project</title>
+        <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body style="margin:0px; overflow:hidden;">
+        <a-scene
+            embedded
+            arjs="debugUIEnabled: false"
+            vr-mode-ui="enabled: false"
+        >
+            <a-assets>
+                <img id="akaninja" src="assets/img/akaninja.png" />
+                <img id="aoninja" src="assets/img/aoninja.png" />
+                <img id="greenninja" src="assets/img/greenninja.png" />
+                <img id="aquaninja" src="assets/img/aquaninja.png" />
+                <img id="pinkninja" src="assets/img/pinkninja.png" />
+                <img id="shinryokuninja" src="assets/img/shinryokuninja.png" />
+            </a-assets>
+
+            <a-marker type="pattern" url="assets/marker/akaninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#akaninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="assets/marker/aoninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#aoninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="assets/marker/greenninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#greenninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="assets/marker/aquaninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#aquaninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="assets/marker/pinkninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#pinkninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="assets/marker/shinryokuninja.patt">
+                <a-entity>
+                    <a-image
+                        src="#shinryokuninja"
+                        width="2"
+                        height="2"
+                        rotation="0 0 10"
+                    ></a-image>
+                </a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
