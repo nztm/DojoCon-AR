@@ -4,6 +4,8 @@
 
 スマホブラウザからカメラを使って、マーカーを読み取ることでARを試すことができます。
 
+![イメージ](assets/image.gif)
+
 ## 使用したライブラリ
 [AR.js](https://github.com/jeromeetienne/AR.js)
 
